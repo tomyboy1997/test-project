@@ -40,7 +40,6 @@ function setup() {
 }
 
 function draw() {
-  scaling(275, 275);
   spinning(425, 425);
 
 }
