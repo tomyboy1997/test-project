@@ -1,6 +1,6 @@
 let angle = 45;
 let x = 0;
-
+let diam = 0;
 
 function setup() {
   createCanvas(700, 700);
@@ -40,6 +40,7 @@ function setup() {
 }
 
 function draw() {
+  scaling(275, 275);
   spinning(425, 425);
 
 }
@@ -54,12 +55,13 @@ function spinning(x,y){
   angle += 5;
 }
 
-//try map to change color or size
 function scaling(x, y){
-  //top_left
-  fill(random(255), random(255), random(255));
+  fill(89, 47, 225);
   noStroke();
-  let d = 125;
-  circle(x, y, d);
-  d += 50;
+
+  /*for (diam = 0; diam < 125; diam += 2){
+      circle(x, y, diam);
+  }*/
+  let m = map(mouseX, 0, width, 0, 125, true);
+  circle(x, y, m)
 }
