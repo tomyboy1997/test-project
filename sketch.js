@@ -61,6 +61,7 @@ function scaling(x, y){
 
   /*for (diam = 0; diam < 125; diam += 2){
       circle(x, y, diam);
+    }
   }*/
   let m = map(mouseX, 0, width, 0, 125, true);
   circle(x, y, m)
